@@ -25,6 +25,6 @@ RUN set -eux \
 VOLUME "/vault/logs"
 VOLUME "/vault/file"
 EXPOSE 8200/tcp
-
+WORKDIR /root
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
 CMD ["server", "-dev"]
